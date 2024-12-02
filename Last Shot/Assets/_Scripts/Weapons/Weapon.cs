@@ -9,6 +9,8 @@ public class Weapon : MonoBehaviour
     [SerializeField] private int ammo;
     [SerializeField] private int maxAmmo;
 
+    [SerializeField] private int numOfProjectiles;
+
     [SerializeField] private float fireRate;
     private Timer cooldown;
 
@@ -42,8 +44,12 @@ public class Weapon : MonoBehaviour
     private void Shoot()
     {
         StartCoroutine(cooldown.StartTimer());
-        var obj = PoolManager.SpawnObject(projectile, muzzle.position, muzzle.rotation).GetComponent<Projectile>();
-        obj.Initialize();
+        for (int i = 0; i < numOfProjectiles; i++)
+        {
+            var obj = PoolManager.SpawnObject(projectile, muzzle.position, muzzle.rotation).GetComponent<Projectile>();
+                    obj.Initialize();
+        }
+        
 
         ammo--;
     }
