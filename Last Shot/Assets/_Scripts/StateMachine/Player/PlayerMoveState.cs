@@ -22,7 +22,7 @@ public class PlayerMoveState : PlayerState
         if (Input.MovementInput().magnitude <= 0)
             return PlayerStateMachine.EPlayerState.Idle;
 
-        if (Input.instance.Roll.Queued)
+        if (Input.instance.Roll.Queued && player._playerData.DashTimer.Ready)
         {
             return PlayerStateMachine.EPlayerState.Roll;
         }

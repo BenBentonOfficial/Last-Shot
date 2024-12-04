@@ -10,9 +10,9 @@ public class Projectile : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    public void Initialize()
+    public void Initialize(Vector2 direction, float speed)
     {
-        rb.velocity = transform.right * 10;
+        rb.linearVelocity = direction * speed;
         StartCoroutine(nameof(LifeCycle));
 
     }

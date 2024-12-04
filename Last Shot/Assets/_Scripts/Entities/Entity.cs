@@ -21,7 +21,7 @@ public class Entity : MonoBehaviour
         _anim.SetBool(state, value);
     }
 
-    public void ZeroVelocity() => _rb.velocity = Vector2.zero;
-    public void SetVelocity(Vector2 newVelocity) => _rb.velocity = newVelocity;
-    public Vector2 Velocity => _rb.velocity;
+    public void ZeroVelocity() => _rb.linearVelocity = Vector2.zero;
+    public void SetVelocity(Vector2 newVelocity) => _rb.linearVelocity = newVelocity;
+    public Vector2 Velocity => _rb.linearVelocity;
 }

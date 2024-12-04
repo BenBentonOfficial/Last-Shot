@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd7dc9384603c414280d8e04f98cf917, type: 3}
+  m_Name: Rifle
+  m_EditorClassIdentifier: 
+  weaponSprite: {fileID: 2425037853541302488, guid: 6fb3ac1b14aab4056b39174c67918e30, type: 3}
+  projectile: {fileID: 6666181800391408145, guid: ec1e8910c320c4a3abdb14f48fc0988d, type: 3}
+  maxAmmo: 100
+  numOfProjectiles: 5
+  fireRate: 0.25
