@@ -12,6 +12,7 @@ public class Input : MonoBehaviour
 
     public GameAction Roll;
     public GameAction Shoot;
+    public GameAction Reload;
 
     private float inputConsumeTimer;
 
@@ -29,6 +30,7 @@ public class Input : MonoBehaviour
         
         Roll.Setup(this, 0.1f);
         Shoot.Setup(this, 0.01f);
+        Reload.Setup(this, 0.01f);
     }
 
     private void Update()

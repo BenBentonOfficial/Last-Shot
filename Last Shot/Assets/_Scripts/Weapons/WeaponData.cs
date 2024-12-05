@@ -9,6 +9,7 @@ public class WeaponData : ScriptableObject
     public int maxAmmo;
     public int numOfProjectiles;
     public float fireRate;
-    
+    public float reloadSpeed;
+
 
 }

@@ -9,7 +9,7 @@ public class PlayerRollState : PlayerState
     public override void EnterState()
     {
         base.EnterState();
-        player.SetVelocity(Input.MovementInput() * player._playerData.dashSpeed);
+        player.SetVelocity(Input.MovementInput() * (player._playerData.dashSpeed + player.MoveSpeed));
 
     }
 

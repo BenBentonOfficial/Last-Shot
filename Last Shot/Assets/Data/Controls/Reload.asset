@@ -9,8 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: TestPlayer
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerData
-  dashSpeed: 4
-  dashCooldown: 2
+  m_Script: {fileID: 11500000, guid: fdff5e0dff5d44809a6191cb69b20c20, type: 3}
+  m_Name: Reload
+  m_EditorClassIdentifier: 
+  inputAction: {fileID: 8829600463167424571, guid: 5b87926f0ffc1436d958121acab148a6, type: 3}

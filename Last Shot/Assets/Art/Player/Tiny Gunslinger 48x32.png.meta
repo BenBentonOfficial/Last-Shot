@@ -190,7 +190,7 @@ TextureImporter:
   swizzle: 50462976
   cookieLightType: 0
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -203,12 +203,25 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -223,13 +236,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 319
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 320
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -244,13 +258,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_1
       rect:
         serializedVersion: 2
-        x: 65
-        y: 319
-        width: 13
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 48
+        y: 320
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -265,13 +280,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_2
       rect:
         serializedVersion: 2
-        x: 113
-        y: 319
-        width: 13
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 96
+        y: 320
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -286,13 +302,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_3
       rect:
         serializedVersion: 2
-        x: 161
-        y: 319
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 144
+        y: 320
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -307,13 +324,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_4
       rect:
         serializedVersion: 2
-        x: 209
-        y: 319
-        width: 13
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 192
+        y: 320
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -328,13 +346,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_5
       rect:
         serializedVersion: 2
-        x: 257
-        y: 319
-        width: 13
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 240
+        y: 320
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -349,13 +368,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_6
       rect:
         serializedVersion: 2
-        x: 17
-        y: 287
-        width: 13
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 288
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -370,13 +390,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_7
       rect:
         serializedVersion: 2
-        x: 65
-        y: 287
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 48
+        y: 288
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -391,13 +412,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_8
       rect:
         serializedVersion: 2
-        x: 113
-        y: 287
-        width: 13
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 96
+        y: 288
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -412,13 +434,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_9
       rect:
         serializedVersion: 2
-        x: 161
-        y: 287
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 144
+        y: 288
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -433,13 +456,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_10
       rect:
         serializedVersion: 2
-        x: 209
-        y: 287
-        width: 13
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 192
+        y: 288
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -454,13 +478,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_11
       rect:
         serializedVersion: 2
-        x: 257
-        y: 287
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 240
+        y: 288
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -475,13 +500,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_12
       rect:
         serializedVersion: 2
-        x: 305
-        y: 287
-        width: 13
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 288
+        y: 288
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -496,13 +522,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_13
       rect:
         serializedVersion: 2
-        x: 353
-        y: 287
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 336
+        y: 288
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -517,13 +544,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_14
       rect:
         serializedVersion: 2
-        x: 17
-        y: 257
-        width: 13
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 256
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -538,13 +566,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_15
       rect:
         serializedVersion: 2
-        x: 65
-        y: 257
-        width: 13
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 48
+        y: 256
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -559,13 +588,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_16
       rect:
         serializedVersion: 2
-        x: 17
-        y: 225
-        width: 14
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 224
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -580,13 +610,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_17
       rect:
         serializedVersion: 2
-        x: 65
-        y: 225
-        width: 14
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 48
+        y: 224
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -601,13 +632,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_18
       rect:
         serializedVersion: 2
-        x: 17
-        y: 193
-        width: 13
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 192
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -622,13 +654,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_19
       rect:
         serializedVersion: 2
-        x: 65
-        y: 193
-        width: 13
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 48
+        y: 192
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -643,13 +676,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_20
       rect:
         serializedVersion: 2
-        x: 17
-        y: 159
-        width: 13
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 160
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -664,13 +698,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_21
       rect:
         serializedVersion: 2
-        x: 65
-        y: 159
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 48
+        y: 160
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -685,13 +720,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_22
       rect:
         serializedVersion: 2
-        x: 113
-        y: 159
-        width: 13
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 96
+        y: 160
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -706,13 +742,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_23
       rect:
         serializedVersion: 2
-        x: 17
-        y: 127
-        width: 14
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 128
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -727,13 +764,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_24
       rect:
         serializedVersion: 2
-        x: 66
+        x: 48
         y: 128
-        width: 15
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -748,13 +786,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_25
       rect:
         serializedVersion: 2
-        x: 116
-        y: 127
-        width: 14
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 96
+        y: 128
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -769,13 +808,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_26
       rect:
         serializedVersion: 2
-        x: 165
-        y: 127
-        width: 12
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 144
+        y: 128
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -790,13 +830,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_27
       rect:
         serializedVersion: 2
-        x: 212
-        y: 127
-        width: 13
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 192
+        y: 128
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -811,13 +852,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_28
       rect:
         serializedVersion: 2
-        x: 258
-        y: 127
-        width: 12
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 240
+        y: 128
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -832,13 +874,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_29
       rect:
         serializedVersion: 2
-        x: 306
-        y: 127
-        width: 12
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 288
+        y: 128
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -853,13 +896,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_30
       rect:
         serializedVersion: 2
-        x: 23
-        y: 99
-        width: 10
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 96
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -874,13 +918,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_31
       rect:
         serializedVersion: 2
-        x: 23
-        y: 67
-        width: 10
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 64
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -895,13 +940,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_32
       rect:
         serializedVersion: 2
-        x: 71
-        y: 67
-        width: 10
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 48
+        y: 64
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -916,13 +962,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_33
       rect:
         serializedVersion: 2
-        x: 17
-        y: 31
-        width: 13
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 32
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -937,13 +984,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_34
       rect:
         serializedVersion: 2
-        x: 65
-        y: 31
-        width: 13
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 48
+        y: 32
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -958,13 +1006,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_35
       rect:
         serializedVersion: 2
-        x: 16
+        x: 0
         y: 0
-        width: 12
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -979,13 +1028,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_36
       rect:
         serializedVersion: 2
-        x: 59
+        x: 48
         y: 0
-        width: 15
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -1000,13 +1050,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_37
       rect:
         serializedVersion: 2
-        x: 103
+        x: 96
         y: 0
-        width: 17
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -1021,13 +1072,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_38
       rect:
         serializedVersion: 2
-        x: 150
+        x: 144
         y: 0
-        width: 17
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -1042,13 +1094,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_39
       rect:
         serializedVersion: 2
-        x: 197
+        x: 192
         y: 0
-        width: 17
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -1063,13 +1116,14 @@ TextureImporter:
       name: Tiny Gunslinger 48x32_40
       rect:
         serializedVersion: 2
-        x: 245
+        x: 240
         y: 0
-        width: 17
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
@@ -1081,15 +1135,18 @@ TextureImporter:
       edges: []
       weights: []
     outline: []
+    customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7e1a238368e0a4d3fbda107a1d3992a9
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
     nameFileIdTable:
       Tiny Gunslinger 48x32_0: -620201882349591083
       Tiny Gunslinger 48x32_1: 1737789382557242839
