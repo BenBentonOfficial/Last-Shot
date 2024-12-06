@@ -1,46 +1,30 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
 
-enum WeaponState
-{
-    IDLE,
-    FIRE,
-    RELOAD
-}
 public class Weapon : MonoBehaviour
 {
-    private WeaponState state;
-    
     [SerializeField] private WeaponData _weaponData;
     [SerializeField] private Transform muzzle;
-    
-    private int ammo;
 
     private Timer cooldown;
 
     private bool triggerPulled;
 
-    #region Test Params
-
     public float spreadAngle;
     public float projectileSpeed;
-
-    #endregion
-
-    [SerializeField] private GameObject ReloadUI;
-    [SerializeField] private Slider reloadSlider;
+    public float recoilDistance;
+    public float recoilSpeed;
+    
+    private Vector3 initialPosition;
 
     private void Start()
     {
         Input.instance.Shoot.perform += TryShoot;
         Input.instance.Shoot.cancel += StopShoot;
-        Input.instance.Reload.perform += TryReload;
-
-        ammo = _weaponData.maxAmmo;
-
+        
         cooldown = new Timer(_weaponData.fireRate);
-        state = WeaponState.IDLE;
+
+        initialPosition = transform.localPosition;
     }
     
     #region Shooting
@@ -48,15 +32,14 @@ public class Weapon : MonoBehaviour
     private void TryShoot()
     {
         triggerPulled = true;
-        if (ammo > 0 && cooldown.Ready)
-        {
-            StartCoroutine(nameof(TriggerPulled));
-        }
+        
+        StartCoroutine(nameof(TriggerPulled));
     }
 
     private IEnumerator TriggerPulled()
     {
-        while (triggerPulled && ammo > 0)
+        yield return new WaitUntil(() => cooldown.Ready);
+        while (triggerPulled)
         {
             Shoot();
             yield return new WaitUntil(()=>cooldown.Ready);
@@ -65,21 +48,17 @@ public class Weapon : MonoBehaviour
 
     private void Shoot()
     {
-        state = WeaponState.FIRE;
         StartCoroutine(cooldown.StartTimer());
 
         if(_weaponData.numOfProjectiles > 1)
-            SpreadShot();
+            ArcSpreadShot();
         else
             SingleShot();
-        
-        ammo--;
-        
-        if(ammo <= 0)
-            TryReload();
+
+        StartCoroutine(nameof(RecoilAnimation));
     }
 
-    private void SpreadShot()
+    private void ArcSpreadShot()
     {
         float halfSpread = spreadAngle / 2f;
         float angleStep = spreadAngle / (_weaponData.numOfProjectiles - 1);
@@ -96,46 +75,49 @@ public class Weapon : MonoBehaviour
 
     private void SingleShot()
     {
- 
-        var obj = PoolManager.SpawnObject(_weaponData.projectile, muzzle.position, muzzle.rotation).GetComponent<Projectile>();
-        obj.Initialize(muzzle.transform.right, projectileSpeed);
+        var dir = CalcSpread();
+        var obj = PoolManager.SpawnObject(_weaponData.projectile, muzzle.position, dir).GetComponent<Projectile>();
+        var newDir = dir * Vector3.right;
+        obj.Initialize(newDir, projectileSpeed);
+    }
+
+    private Quaternion CalcSpread()
+    {
+        var angle = Random.Range(-spreadAngle, spreadAngle);
+        return muzzle.rotation * Quaternion.Euler(0,0,angle);
     }
 
     private void StopShoot()
     {
         triggerPulled = false;
-        state = WeaponState.IDLE;
-        StopCoroutine(TriggerPulled());
+        StopCoroutine(nameof(TriggerPulled));
+    }
+    
+    private IEnumerator RecoilAnimation()
+    {
+        // Move the gun backward
+        Vector3 recoilPosition = initialPosition - Vector3.right * recoilDistance;
+        float progress = 0f;
+
+        while (progress < 1f)
+        {
+            progress += Time.deltaTime * recoilSpeed;
+            transform.localPosition = Vector3.Lerp(initialPosition, recoilPosition, progress);
+            yield return null;
+        }
+
+        // Move the gun back to its original position
+        progress = 0f;
+        while (progress < 1f)
+        {
+            progress += Time.deltaTime * recoilSpeed;
+            transform.localPosition = Vector3.Lerp(recoilPosition, initialPosition, progress);
+            yield return null;
+        }
     }
     
     #endregion
-
-    #region Reloading
-
-    private void TryReload()
-    {
-        if (ammo < _weaponData.maxAmmo)
-        {
-            StartCoroutine(nameof(Reloading));
-        }
-    }
-
-    private IEnumerator Reloading()
-    {
-        state = WeaponState.RELOAD;
-        float reloadTimer = 0;
-        
-        while (reloadTimer < _weaponData.reloadSpeed)
-        {
-            yield return new WaitForEndOfFrame();
-            reloadSlider.value = reloadTimer / _weaponData.reloadSpeed;
-            reloadTimer += Time.deltaTime;
-        }
-        
-        state = WeaponState.IDLE;
-        ammo = _weaponData.maxAmmo;
-    }
-
-
-    #endregion
+    
+    
+    
 }

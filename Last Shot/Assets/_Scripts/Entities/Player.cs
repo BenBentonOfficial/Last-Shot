@@ -1,11 +1,13 @@
 
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : Entity
 {
     public PlayerStateMachine _stateMachine;
     
     public PlayerData _playerData;
+    [SerializeField] private Slider rollCooldownSlider;
     
     protected override void Awake()
     {
@@ -14,7 +16,7 @@ public class Player : Entity
         _stateMachine = GetComponent<PlayerStateMachine>();
         _stateMachine.Initialize(this, _rb, _anim);
 
-        _playerData.DashTimer = new Timer(_playerData.dashCooldown);
+        _playerData.DashTimer = new Timer(_playerData.dashCooldown, rollCooldownSlider);
     }
     
 }
