@@ -23,7 +23,7 @@ public class PoolManager : MonoBehaviour
         GameObject obj = pool.InactiveObjects.FirstOrDefault();
 
         // if no obj is found, make one. Else, activate one from the pool
-        if (obj == null)
+        if (!obj)
         {
             obj = Instantiate(objectToSpawn, spawnPosition, spawnRotation);
         }

@@ -17,3 +17,4 @@ MonoBehaviour:
   maxAmmo: 100
   numOfProjectiles: 1
   fireRate: 0.2
+  reloadSpeed: 0

@@ -1,10 +1,11 @@
 
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Player : Entity
 {
-    public PlayerStateMachine _stateMachine;
+    [NonSerialized] public PlayerStateMachine _stateMachine;
     
     public PlayerData _playerData;
     [SerializeField] private Slider rollCooldownSlider;
