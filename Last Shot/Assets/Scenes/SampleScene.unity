@@ -753,7 +753,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 4
-  _stateMachine: {fileID: 0}
   _playerData: {fileID: 11400000, guid: cce8640f0309048eca8f6997113ab4b4, type: 2}
   rollCooldownSlider: {fileID: 1321953114}
 --- !u!50 &720584747
@@ -1064,6 +1063,7 @@ MonoBehaviour:
   timeSinceLastHit: 0
   isRegen: 0
   healthSlider: {fileID: 946467}
+  floatingDamageText: {fileID: 2321306037527080672, guid: 0f5be6691ce5f420b9925d25eb5089fb, type: 3}
 --- !u!4 &848919148
 Transform:
   m_ObjectHideFlags: 0
@@ -1602,12 +1602,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9893d44f6e3194f92937abb28a30e41f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _weaponData: {fileID: 11400000, guid: dea51db605c8c4fd480e23ec97209ced, type: 2}
+  weaponData: {fileID: 11400000, guid: dea51db605c8c4fd480e23ec97209ced, type: 2}
   muzzle: {fileID: 1884152650}
-  spreadAngle: 20
+  spreadAngle: 10
   projectileSpeed: 20
   recoilDistance: 0.1
   recoilSpeed: 25
+  _damageType: 0
 --- !u!1 &1884152649
 GameObject:
   m_ObjectHideFlags: 0
