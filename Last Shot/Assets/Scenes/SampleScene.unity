@@ -219,7 +219,7 @@ GameObject:
   - component: {fileID: 186994523}
   - component: {fileID: 186994525}
   - component: {fileID: 186994524}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -296,7 +296,7 @@ GameObject:
   - component: {fileID: 229848425}
   - component: {fileID: 229848427}
   - component: {fileID: 229848426}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Avatar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -360,7 +360,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1930733337
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -620201882349591083, guid: 675e6af044826478695856c2378455ae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -655,7 +655,7 @@ GameObject:
   - component: {fileID: 720584744}
   - component: {fileID: 720584743}
   - component: {fileID: 720584747}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -870,7 +870,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 826785099}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1242,7 +1242,7 @@ GameObject:
   - component: {fileID: 1022398112}
   - component: {fileID: 1022398111}
   - component: {fileID: 1022398110}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1422,7 +1422,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1321953115}
   - component: {fileID: 1321953114}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1512,7 +1512,7 @@ GameObject:
   - component: {fileID: 1647290972}
   - component: {fileID: 1647290973}
   - component: {fileID: 1647290974}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1577,7 +1577,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1930733337
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 8460462712314525113, guid: 6fb3ac1b14aab4056b39174c67918e30, type: 3}
   m_Color: {r: 0.7169812, g: 0.7169812, b: 0.7169812, a: 1}
@@ -1605,7 +1605,7 @@ MonoBehaviour:
   weaponData: {fileID: 11400000, guid: dea51db605c8c4fd480e23ec97209ced, type: 2}
   muzzle: {fileID: 1884152650}
   spreadAngle: 10
-  projectileSpeed: 20
+  projectileSpeed: 30
   recoilDistance: 0.1
   recoilSpeed: 25
   _damageType: 0
@@ -1618,7 +1618,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1884152650}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1651,7 +1651,7 @@ GameObject:
   - component: {fileID: 1907919366}
   - component: {fileID: 1907919367}
   - component: {fileID: 1907919368}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WeaponPivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1710,7 +1710,7 @@ GameObject:
   - component: {fileID: 1934825430}
   - component: {fileID: 1934825432}
   - component: {fileID: 1934825431}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
