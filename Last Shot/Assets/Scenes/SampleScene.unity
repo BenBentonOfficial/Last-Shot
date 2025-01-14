@@ -1576,7 +1576,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1930733337
+  m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 8460462712314525113, guid: 6fb3ac1b14aab4056b39174c67918e30, type: 3}
@@ -1602,7 +1602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9893d44f6e3194f92937abb28a30e41f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponData: {fileID: 11400000, guid: dea51db605c8c4fd480e23ec97209ced, type: 2}
+  weaponData: {fileID: 11400000, guid: d9a0018cf7890469f93b6e6fedb93072, type: 2}
   muzzle: {fileID: 1884152650}
   spreadAngle: 10
   projectileSpeed: 30

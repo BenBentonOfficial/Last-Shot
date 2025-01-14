@@ -224,6 +224,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _damageText: {fileID: 1236031325431841568}
   _animator: {fileID: 6664785492487726087}
+  _colors:
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 0.33333334, b: 0, a: 1}
+  - {r: 0, g: 1, b: 0.628639, a: 1}
+  - {r: 0, g: 0.84743667, b: 1, a: 1}
+  - {r: 0, g: 0.31192183, b: 1, a: 1}
 --- !u!95 &6664785492487726087
 Animator:
   serializedVersion: 7

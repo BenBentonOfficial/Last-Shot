@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponSprite: {fileID: 2425037853541302488, guid: 6fb3ac1b14aab4056b39174c67918e30, type: 3}
   projectile: {fileID: 6666181800391408145, guid: ec1e8910c320c4a3abdb14f48fc0988d, type: 3}
-  maxAmmo: 100
   numOfProjectiles: 1
   fireRate: 0.2
-  reloadSpeed: 0
+  spreadAngle: 30
+  projectileSpeed: 30
+  recoilDistance: 0.1
+  recoilSpeed: 25

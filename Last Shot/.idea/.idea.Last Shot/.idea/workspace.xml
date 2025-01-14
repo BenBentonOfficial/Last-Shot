@@ -6,7 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="3d7cae4b-a72f-492b-99e1-92c507716944" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Last Shot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Last Shot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TestProjectile_Type1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TestProjectile_Type1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Weapons/Rifle.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Weapons/Rifle.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Weapons/SMG.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Weapons/SMG.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FloatingDamageText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FloatingDamageText.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/DamageText.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/DamageText.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Misc/Testing/TestDummy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Misc/Testing/TestDummy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Weapons/ActiveReloadWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Weapons/ActiveReloadWeapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Weapons/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Weapons/Projectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Weapons/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Weapons/Weapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Weapons/WeaponData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Weapons/WeaponData.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +29,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/FloatingDamageText.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Misc/Testing/TestDummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/SkillsTesting/SkillData.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -29,19 +40,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Test",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.0.29f1/Unity.app/Contents/MacOS/Unity" />
@@ -95,7 +106,10 @@
       <option name="presentableId" value="Default" />
       <updated>1733752451651</updated>
       <workItem from="1733752453298" duration="18875000" />
-      <workItem from="1734034420169" duration="7520000" />
+      <workItem from="1734034420169" duration="7626000" />
+      <workItem from="1734534517702" duration="1499000" />
+      <workItem from="1736281411497" duration="7272000" />
+      <workItem from="1736800124114" duration="443000" />
     </task>
     <servers />
   </component>

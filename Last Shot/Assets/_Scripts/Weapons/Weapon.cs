@@ -3,11 +3,11 @@ using UnityEngine;
 
 public enum DamageType
 {
-    physical,
-    fire,
-    lightning,
-    ice,
-    dark
+    Physical,
+    Fire,
+    Lightning,
+    Ice,
+    Dark
 }
 
 public class Weapon : MonoBehaviour
@@ -19,10 +19,16 @@ public class Weapon : MonoBehaviour
 
     private bool _triggerPulled;
 
+    #region WeaponStats
+    
     public float spreadAngle;
     public float projectileSpeed;
     public float recoilDistance;
     public float recoilSpeed;
+
+    #endregion
+
+    
     
     private Vector3 _initialPosition;
     
@@ -32,7 +38,6 @@ public class Weapon : MonoBehaviour
     {
         Input.instance.Shoot.perform += TryShoot;
         Input.instance.Shoot.cancel += StopShoot;
-        
         _cooldown = new Timer(weaponData.fireRate);
 
         _initialPosition = transform.localPosition;

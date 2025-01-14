@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd7dc9384603c414280d8e04f98cf917, type: 3}
-  m_Name: SMG
+  m_Name: Shotty
   m_EditorClassIdentifier: 
-  weaponSprite: {fileID: 8460462712314525113, guid: 6fb3ac1b14aab4056b39174c67918e30, type: 3}
+  weaponSprite: {fileID: 0}
   projectile: {fileID: 6666181800391408145, guid: ec1e8910c320c4a3abdb14f48fc0988d, type: 3}
-  numOfProjectiles: 1
-  fireRate: 0.1
-  spreadAngle: 45
-  projectileSpeed: 50
-  recoilDistance: 0.1
-  recoilSpeed: 35
+  numOfProjectiles: 6
+  fireRate: 0.72
+  spreadAngle: 48
+  projectileSpeed: 49
+  recoilDistance: 0.383
+  recoilSpeed: 24.3

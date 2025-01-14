@@ -58,8 +58,7 @@ public class ActiveReloadWeapon : MonoBehaviour
         Input.instance.Shoot.perform += TryShoot;
         Input.instance.Shoot.cancel += StopShoot;
         Input.instance.Reload.perform += TryReload;
-
-        ammo = _weaponData.maxAmmo;
+        
 
         cooldown = new Timer(_weaponData.fireRate);
         ReloadUI.SetActive(false);
@@ -86,10 +85,7 @@ public class ActiveReloadWeapon : MonoBehaviour
                 StartCoroutine(FailedReload());
             }
         }
-        if (ammo < _weaponData.maxAmmo && !reloading)
-        {
-            reloadCoroutine = StartCoroutine(Reload());
-        }
+        
     }
 
 
@@ -110,8 +106,7 @@ public class ActiveReloadWeapon : MonoBehaviour
         reloadFailed = false;
         reloading = false;
         ReloadUI.SetActive(false);
-
-        ammo = _weaponData.maxAmmo;
+        
     }
 
     private IEnumerator Reload()
@@ -133,7 +128,6 @@ public class ActiveReloadWeapon : MonoBehaviour
         ReloadUI.SetActive(false);
         reloading = false;
         
-        ammo = _weaponData.maxAmmo;
         Debug.Log("Ready to fire");
     }
 
@@ -178,15 +172,15 @@ public class ActiveReloadWeapon : MonoBehaviour
             var direction = Quaternion.Euler(0, 0, angle) * transform.right;
             float angleToFace = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; 
             var obj = PoolManager.SpawnObject(_weaponData.projectile, muzzle.position, Quaternion.Euler(0,0,angleToFace)).GetComponent<Projectile>();
-            obj.Initialize(direction, projectileSpeed, 1, DamageType.dark);
+            obj.Initialize(direction, projectileSpeed, 1, DamageType.Dark);
         }
     }
 
-    private void SingleShot()
+    private void SingleShot()   
     {
  
         var obj = PoolManager.SpawnObject(_weaponData.projectile, muzzle.position, muzzle.rotation).GetComponent<Projectile>();
-        obj.Initialize(muzzle.transform.right, projectileSpeed, 1, DamageType.dark);
+        obj.Initialize(muzzle.transform.right, projectileSpeed, 1, DamageType.Dark);
     }
 
     private void StopShoot()

@@ -27,7 +27,8 @@ public class TestDummy : MonoBehaviour, IDamageable
         timeSinceLastHit = Time.time;
         health -= damage;
         
-        PoolManager.SpawnObject(floatingDamageText, transform.position, Quaternion.identity).GetComponent<FloatingDamageText>().Initialize(damage, type);
+        var text = PoolManager.SpawnObject(floatingDamageText, transform.position, Quaternion.identity);
+        text.GetComponent<FloatingDamageText>().Initialize(damage, type);
     }
 
     private void Update()
