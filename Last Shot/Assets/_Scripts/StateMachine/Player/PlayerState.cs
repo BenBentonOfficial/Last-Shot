@@ -1,3 +1,4 @@
+using System;
 
 public class PlayerState : State<PlayerStateMachine.EPlayerState>
 {
@@ -8,6 +9,7 @@ public class PlayerState : State<PlayerStateMachine.EPlayerState>
     }
 
     protected Player player;
+    
 
     public override void EnterState()
     {
@@ -25,6 +27,8 @@ public class PlayerState : State<PlayerStateMachine.EPlayerState>
         base.ExitState();
         player.Anim.SetBool(StateKey.ToString(), false);
     }
+
+
 
     public override PlayerStateMachine.EPlayerState GetNextState()
     {

@@ -15,13 +15,18 @@ public abstract class State<EState> where EState : Enum
     protected float stateTimer;
     protected bool animEnded;
 
+    public Action enterState;
+    public Action exitState;
+
     public virtual void EnterState()
     {
         animEnded = false;
+        enterState?.Invoke();
     }
 
     public virtual void ExitState()
     {
+        exitState?.Invoke();
     }
 
     public virtual void UpdateState()

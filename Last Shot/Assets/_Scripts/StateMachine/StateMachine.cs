@@ -6,6 +6,11 @@ public abstract class StateMachine<EState> : MonoBehaviour where EState : Enum
 {
     protected Dictionary<EState, State<EState>> States = new Dictionary<EState, State<EState>>();
 
+    public State<EState> GetState(EState state)
+    {
+        return States[state];
+    }
+
     protected State<EState> CurrentState;
     protected State<EState> LastState;
 

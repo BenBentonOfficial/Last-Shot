@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public enum DamageType
 {
@@ -12,6 +14,8 @@ public enum DamageType
 
 public class Weapon : MonoBehaviour
 {
+    public Player _player;
+    
     [SerializeField] private WeaponData weaponData;
     [SerializeField] private Transform muzzle;
 
@@ -27,12 +31,15 @@ public class Weapon : MonoBehaviour
     public float recoilSpeed;
 
     #endregion
-
-    
     
     private Vector3 _initialPosition;
     
     [SerializeField] private DamageType _damageType;
+
+    private void Awake()
+    {
+        _player = GetComponentInParent<Player>();
+    }
 
     private void Start()
     {
@@ -66,7 +73,7 @@ public class Weapon : MonoBehaviour
     {
         StartCoroutine(_cooldown.StartTimer());
 
-        if(weaponData.numOfProjectiles > 1)
+        if(GetTotalNumOfProjectiles() > 1)
             ArcSpreadShot();
         else
             SingleShot();
@@ -77,15 +84,22 @@ public class Weapon : MonoBehaviour
     private void ArcSpreadShot()
     {
         float halfSpread = spreadAngle / 2f;
-        float angleStep = spreadAngle / (weaponData.numOfProjectiles - 1);
+        float angleStep = spreadAngle / (GetTotalNumOfProjectiles() - 1);
         
-        for (int i = 0; i < weaponData.numOfProjectiles; i++)
+        for (int i = 0; i < GetTotalNumOfProjectiles(); i++)
         {
-            var angle = -halfSpread + angleStep * i;
+            /*var angle = -halfSpread + angleStep * i;
             var direction = Quaternion.Euler(0, 0, angle) * transform.right;
             float angleToFace = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; 
+            
+            
             var obj = PoolManager.SpawnObject(weaponData.projectile, muzzle.position, Quaternion.Euler(0,0,angleToFace)).GetComponent<Projectile>();
-            obj.Initialize(direction, projectileSpeed, 10, _damageType);
+            
+            obj.Initialize(direction, projectileSpeed, CalcDamage(), _damageType);
+            
+            */
+            
+            SingleShot();
         }
     }
 
@@ -94,7 +108,7 @@ public class Weapon : MonoBehaviour
         var dir = CalcSpread();
         var obj = PoolManager.SpawnObject(weaponData.projectile, muzzle.position, dir).GetComponent<Projectile>();
         var newDir = dir * Vector3.right;
-        obj.Initialize(newDir, projectileSpeed, 10, _damageType);
+        obj.Initialize(newDir, projectileSpeed, CalcDamage(), _damageType);
     }
 
     private Quaternion CalcSpread()
@@ -133,7 +147,15 @@ public class Weapon : MonoBehaviour
     }
     
     #endregion
-    
-    
-    
+
+    private float CalcDamage()
+    {
+        return weaponData.damage + _player._itemCollection.GetDamageBonus();
+    }
+
+    private int GetTotalNumOfProjectiles() =>
+        weaponData.numOfProjectiles + _player._itemCollection.GetProjectileNumBonus();
+
+
+
 }
