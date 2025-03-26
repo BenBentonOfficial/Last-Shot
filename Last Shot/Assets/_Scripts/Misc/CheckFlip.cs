@@ -9,6 +9,9 @@ public class CheckFlip : MonoBehaviour
     private Vector3 flippedY = new Vector3(1, -1, 1);
     private void Update()
     {
+        if (Input.instance.usingGamepad && Input.Aim().magnitude < 0.1f)
+            return;
+        
         if (flipY)
         {
             transform.localScale = Input.Aim().x >= 0 ? norm : flippedY;

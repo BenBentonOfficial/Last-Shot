@@ -16,7 +16,7 @@ public class Entity : MonoBehaviour, IDamageable
         set => currentHealth = value;
     }
     public float HealthP => currentHealth / maxHealth;
-    public void Damage(float damage, DamageType type)
+    public virtual void Damage(float damage, DamageType type)
     {
         currentHealth -= damage;
 
@@ -33,6 +33,7 @@ public class Entity : MonoBehaviour, IDamageable
     public float MoveSpeed => _moveSpeed;
 
     public Animator Anim => _anim;
+    protected bool animEnded = false;
 
     protected virtual void Awake()
     {
@@ -44,6 +45,7 @@ public class Entity : MonoBehaviour, IDamageable
     {
         _anim.SetBool(state, value);
     }
+
 
     public void ZeroVelocity() => _rb.linearVelocity = Vector2.zero;
     public void SetVelocity(Vector2 newVelocity) => _rb.linearVelocity = newVelocity;

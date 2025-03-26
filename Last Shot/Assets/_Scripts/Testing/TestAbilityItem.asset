@@ -12,3 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c984413dd60542099b9bf0a6544fc96, type: 3}
   m_Name: TestAbilityItem
   m_EditorClassIdentifier: 
+  affectedStat: 3
+  affectedPlayerState: 2
+  onEnter: 0

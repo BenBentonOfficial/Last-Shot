@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d44c55874730c4cd6992290b59838478, type: 3}
   m_Name: TestDamageItem
   m_EditorClassIdentifier: 
-  affectedStat: 0
-  increaseValue: 0
+  affectedStat: 2
+  increaseValue: 2

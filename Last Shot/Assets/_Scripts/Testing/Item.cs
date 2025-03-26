@@ -11,7 +11,11 @@ public enum AffectedStat
 public abstract class Item : ScriptableObject
 {
     public AffectedStat affectedStat;
-    public abstract void Initialize(Player player);
+    public abstract void Equip(Player player);
+    
+    public abstract void Unequip(Player player);
+    
+    
 
     public abstract float Value(); 
 

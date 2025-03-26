@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using UnityEngine;
 
 [Serializable]
 public class ItemCollection
@@ -38,7 +37,7 @@ public class ItemCollection
     
     public void EquipItem(Item item, Player player)
     {
-        item.Initialize(player);
+        item.Equip(player);
         items.Add(item);
     }
 }

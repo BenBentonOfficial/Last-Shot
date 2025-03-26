@@ -4,7 +4,12 @@ using UnityEngine;
 public class StatItem : Item
 {
     public float increaseValue;
-    public override void Initialize(Player player)
+    public override void Equip(Player player)
+    {
+        
+    }
+
+    public override void Unequip(Player player)
     {
         
     }

@@ -9,25 +9,15 @@ public class Player : Entity
     public PlayerData _playerData;
     PlayerUI PlayerUI;
     
-    
-    
-    
     //Item test area
-    public ItemCollection _itemCollection = new ItemCollection();
-
-
-    private void Start()
-    {
-      
-    }
+    public ItemCollection _itemCollection;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        var item = other.GetComponent<ItemPickup>();
-        
-        if (item == null) return;
-        
-        _itemCollection.EquipItem(item.item, this);
+        if (other.TryGetComponent(out ItemPickup item))
+        {
+            _itemCollection.EquipItem(item.item, this);
+        }
     }
 
 

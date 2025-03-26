@@ -14,6 +14,8 @@ public class WeaponData : ScriptableObject
     [Range(0, 0.5f)] public float recoilDistance;
     [Range(15, 50)] public float recoilSpeed;
     [Range(1, 25f)] public float damage;
+    [Range(1, 150f)] public float maxAmmo;
+    [Range(0.3f, 1.5f)] public float reloadTime;
 
 
 }

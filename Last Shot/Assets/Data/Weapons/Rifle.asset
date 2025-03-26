@@ -20,3 +20,4 @@ MonoBehaviour:
   projectileSpeed: 30
   recoilDistance: 0.1
   recoilSpeed: 25
+  damage: 1

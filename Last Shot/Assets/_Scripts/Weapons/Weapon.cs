@@ -1,7 +1,6 @@
-using System;
 using System.Collections;
 using UnityEngine;
-using Random = UnityEngine.Random;
+using UnityEngine.UI;
 
 public enum DamageType
 {
@@ -30,11 +29,20 @@ public class Weapon : MonoBehaviour
     public float recoilDistance;
     public float recoilSpeed;
 
+    public float maxAmmo;
+    public float currentAmmo;
+    public float reloadTime;
+    public float reloadLength;
+
     #endregion
+
+    [SerializeField] private GameObject ReloadUI;
+    [SerializeField] private Slider reloadSlider;
     
     private Vector3 _initialPosition;
     
     [SerializeField] private DamageType _damageType;
+    [SerializeField] private GameObject gunFlash;
 
     private void Awake()
     {
@@ -48,6 +56,14 @@ public class Weapon : MonoBehaviour
         _cooldown = new Timer(weaponData.fireRate);
 
         _initialPosition = transform.localPosition;
+
+        currentAmmo = maxAmmo;
+    }
+
+    public void Equip(WeaponData newData)
+    {
+        weaponData = newData;
+        
     }
     
     #region Shooting
@@ -58,20 +74,49 @@ public class Weapon : MonoBehaviour
         
         StartCoroutine(nameof(TriggerPulled));
     }
+    
+    private IEnumerator Reload()
+    {
+        Debug.Log("reloading");
+        ReloadUI.SetActive(true);
+        
+        reloadTime = 0;
+
+        while (reloadTime < reloadLength)
+        {
+            yield return new WaitForEndOfFrame();
+            reloadSlider.value = reloadTime / reloadLength;
+            reloadTime += Time.deltaTime;
+        }
+        
+        currentAmmo = maxAmmo;
+        ReloadUI.SetActive(false);
+        
+        Debug.Log("Ready to fire");
+    }
 
     private IEnumerator TriggerPulled()
     {
-        yield return new WaitUntil(() => _cooldown.Ready);
+        yield return new WaitUntil(() => _cooldown.Ready && currentAmmo > 0);
         while (_triggerPulled)
         {
+            
             Shoot();
-            yield return new WaitUntil(()=>_cooldown.Ready);
+            yield return new WaitUntil(()=>_cooldown.Ready && currentAmmo > 0);
         }
     }
 
     private void Shoot()
     {
+        if (currentAmmo <= 0)
+            return;
+        
         StartCoroutine(_cooldown.StartTimer());
+
+        currentAmmo--;
+        
+        if (currentAmmo <= 0)
+            StartCoroutine(Reload());
 
         if(GetTotalNumOfProjectiles() > 1)
             ArcSpreadShot();
@@ -83,22 +128,8 @@ public class Weapon : MonoBehaviour
 
     private void ArcSpreadShot()
     {
-        float halfSpread = spreadAngle / 2f;
-        float angleStep = spreadAngle / (GetTotalNumOfProjectiles() - 1);
-        
         for (int i = 0; i < GetTotalNumOfProjectiles(); i++)
         {
-            /*var angle = -halfSpread + angleStep * i;
-            var direction = Quaternion.Euler(0, 0, angle) * transform.right;
-            float angleToFace = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; 
-            
-            
-            var obj = PoolManager.SpawnObject(weaponData.projectile, muzzle.position, Quaternion.Euler(0,0,angleToFace)).GetComponent<Projectile>();
-            
-            obj.Initialize(direction, projectileSpeed, CalcDamage(), _damageType);
-            
-            */
-            
             SingleShot();
         }
     }
@@ -109,6 +140,10 @@ public class Weapon : MonoBehaviour
         var obj = PoolManager.SpawnObject(weaponData.projectile, muzzle.position, dir).GetComponent<Projectile>();
         var newDir = dir * Vector3.right;
         obj.Initialize(newDir, projectileSpeed, CalcDamage(), _damageType);
+        
+        // FLASH
+        // var flash = PoolManager.SpawnObject(gunFlash, muzzle.position, dir).GetComponent<GunFlash>();
+        // flash.Initialize(Random.Range(0, 2));
     }
 
     private Quaternion CalcSpread()

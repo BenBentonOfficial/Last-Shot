@@ -6,10 +6,17 @@ public class AbilityItem : Item
 {
     public PlayerStateMachine.EPlayerState affectedPlayerState;
     public bool onEnter;
-    public override void Initialize(Player player)
+    
+    public override void Equip(Player player)
     {
-        if(onEnter) ApplyEffect(ref player._stateMachine.GetState(affectedPlayerState).enterState);
-        else ApplyEffect(ref player._stateMachine.GetState(affectedPlayerState).exitState);
+        if(onEnter) Subscribe(ref player._stateMachine.GetState(affectedPlayerState).enterState);
+        else Subscribe(ref player._stateMachine.GetState(affectedPlayerState).exitState);
+    }
+
+    public override void Unequip(Player player)
+    {
+        if(onEnter) Unsubscribe(ref player._stateMachine.GetState(affectedPlayerState).enterState);
+        else Unsubscribe(ref player._stateMachine.GetState(affectedPlayerState).exitState);
     }
 
     public override float Value()
@@ -17,9 +24,14 @@ public class AbilityItem : Item
         throw new NotImplementedException();
     }
 
-    public void ApplyEffect(ref Action action)
+    private void Subscribe(ref Action action)
     {
         action += ActiveEffect;
+    }
+
+    private void Unsubscribe(ref Action action)
+    {
+        action -= ActiveEffect;
     }
 
     public void ActiveEffect()
