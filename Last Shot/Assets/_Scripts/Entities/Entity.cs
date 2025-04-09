@@ -8,7 +8,7 @@ public class Entity : MonoBehaviour, IDamageable
     #region Health
     
     private float currentHealth;
-    private float maxHealth;
+    [SerializeField] private float maxHealth;  // eventually move this to Data
 
     public float Health
     {
@@ -18,13 +18,6 @@ public class Entity : MonoBehaviour, IDamageable
     public float HealthP => currentHealth / maxHealth;
     public virtual void Damage(float damage, DamageType type)
     {
-        currentHealth -= damage;
-
-        if (currentHealth <= 0)
-        {
-            currentHealth = 0;
-            PoolManager.ReturnObjectToPool(gameObject);
-        }
     }
     
     #endregion
@@ -39,6 +32,8 @@ public class Entity : MonoBehaviour, IDamageable
     {
         _rb = GetComponent<Rigidbody2D>();
         _anim = GetComponentInChildren<Animator>();
+        
+        Health = maxHealth;
     }
 
     public void SetAnimState(string state ,bool value)

@@ -15,6 +15,8 @@ public class MonsterIdleState : MonsterState
 
     public override EMonsterState GetNextState()
     {
+        if (_monster.Health <= 0)
+            return EMonsterState.Death;
 
         if (_monster.PlayerInRange())
         {

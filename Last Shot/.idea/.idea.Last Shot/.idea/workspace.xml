@@ -6,40 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="3d7cae4b-a72f-492b-99e1-92c507716944" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Last Shot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Last Shot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/AC_Player.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/AC_Player.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/Player_Idle.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/Player_Idle.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/Player_Roll.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/Player_Roll.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/Player_Run.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/Player_Run.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Player/Tiny Gunslinger 48x32.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Player/Tiny Gunslinger 48x32.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Weapons/Gun flashes64x32.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Weapons/Gun flashes64x32.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Weapons/Gun sprites64x32.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Weapons/Gun sprites64x32.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Weapons/Rifle.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Weapons/Rifle.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Weapons/Shotty.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Weapons/Shotty.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Misc/Settings/Renderer2D.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Misc/Settings/Renderer2D.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/Enemies/Monster 1/AC_TinyMonster.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animations/Enemies/Monster 1/AC_TinyMonster.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/Enemies/Monster 1/TinyMonster_Death.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animations/Enemies/Monster 1/TinyMonster_Death.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Misc/chool/upheaval/upheavtt SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Misc/chool/upheaval/upheavtt SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestLevel.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Core/Input.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Core/Input.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Entities/Enemies/Monster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Entities/Enemies/Monster.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Entities/Enemies/MonsterIdleState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Entities/Enemies/MonsterIdleState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Entities/Enemies/MonsterMoveState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Entities/Enemies/MonsterMoveState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Entities/Enemies/TinyMonster/TinyMonster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Entities/Enemies/TinyMonster/TinyMonster.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Entities/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Entities/Entity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Entities/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Entities/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Entities/PlayerAnimationTriggers.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Entities/PlayerAnimationTriggers.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Misc/CheckFlip.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Misc/CheckFlip.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Misc/WeaponAim.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Misc/WeaponAim.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Testing/AbilityItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Testing/AbilityItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Testing/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Testing/Item.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Testing/ItemCollection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Testing/ItemCollection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Testing/StatItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Testing/StatItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Testing/TestAbilityItem.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Testing/TestAbilityItem.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Testing/TestDamageItem.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Testing/TestDamageItem.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Testing/TestProjNumItem.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Testing/TestProjNumItem.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Weapons/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Weapons/Weapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Weapons/WeaponData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Weapons/WeaponData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/AnnotationManager" beforeDir="false" afterPath="$PROJECT_DIR$/Library/AnnotationManager" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Misc/Transparency.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Misc/Transparency.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/StateMachine/Enemy/MonsterState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/StateMachine/Enemy/MonsterState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/StateMachine/Enemy/TinyMonster/TinyMonsterStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/StateMachine/Enemy/TinyMonster/TinyMonsterStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Weapons/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Weapons/Projectile.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +36,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Misc/WeaponAim.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Testing/AbilityItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Testing/ItemCollection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Waves/WaveManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Weapons/GunFlash.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Weapons/Weapon.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -72,7 +53,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Items&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;enemy-testing&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -156,7 +137,13 @@
       <workItem from="1741608665767" duration="1234000" />
       <workItem from="1741798376283" duration="1724000" />
       <workItem from="1742918877971" duration="4045000" />
-      <workItem from="1742925336330" duration="9528000" />
+      <workItem from="1742925336330" duration="32361000" />
+      <workItem from="1744137780086" duration="1422000" />
+      <workItem from="1744201792284" duration="340000" />
+      <workItem from="1744202807106" duration="74000" />
+      <workItem from="1744203359000" duration="563000" />
+      <workItem from="1744204851958" duration="2124000" />
+      <workItem from="1744210166349" duration="4401000" />
     </task>
     <servers />
   </component>

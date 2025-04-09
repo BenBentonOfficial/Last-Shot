@@ -16,7 +16,7 @@ public class MonsterState : State<EMonsterState>
     public override void ExitState()
     {
         base.ExitState();
-        _monster.SetAnimState(StateKey.ToString(), true);
+        _monster.SetAnimState(StateKey.ToString(), false);
     }
 
 

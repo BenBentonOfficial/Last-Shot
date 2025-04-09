@@ -7,8 +7,6 @@ public class TinyMonster : Monster
     {
         base.Awake();
 
-        Health = 20;
-
         stateMachine = GetComponent<TinyMonsterStateMachine>();
         stateMachine.Initialize(this);
     }

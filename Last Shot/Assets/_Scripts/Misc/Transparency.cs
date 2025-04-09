@@ -12,11 +12,13 @@ public class Transparency : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        spriteRenderer.color = new Color(1, 1, 1, 0.5f);
+        if (other.CompareTag("Player"))
+            spriteRenderer.color = new Color(1, 1, 1, 0.5f);
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        spriteRenderer.color = new Color(1, 1, 1, 1);
+        if (other.CompareTag("Player"))
+            spriteRenderer.color = new Color(1, 1, 1, 1);
     }
 }

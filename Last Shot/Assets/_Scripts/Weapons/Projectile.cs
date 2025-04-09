@@ -30,7 +30,10 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        other.GetComponent<IDamageable>()?.Damage(_damage, _damageType);
-        PoolManager.ReturnObjectToPool(gameObject);
+        if (other.TryGetComponent(out IDamageable health))
+        {
+            health.Damage(_damage,_damageType);
+            PoolManager.ReturnObjectToPool(gameObject);
+        }
     }
 }

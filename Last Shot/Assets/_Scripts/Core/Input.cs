@@ -69,4 +69,9 @@ public class Input : MonoBehaviour
     {
         usingGamepad = playerInput.currentControlScheme.Equals("Gamepad");
     }
+
+    public Vector3 PlayerPos()
+    {
+        return transform.position;
+    }
 }
