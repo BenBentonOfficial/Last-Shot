@@ -16,6 +16,7 @@ public class PoolManager : MonoBehaviour
         if (pool == null)
         {
             pool = new PoolData() { ID = objectToSpawn.name };
+            pool.Parent = new GameObject(objectToSpawn.name);
             ObjectPools.Add(pool);
         }
 
@@ -26,6 +27,7 @@ public class PoolManager : MonoBehaviour
         if (!obj)
         {
             obj = Instantiate(objectToSpawn, spawnPosition, spawnRotation);
+            obj.transform.parent = pool.Parent.transform;
         }
         else
         {
@@ -58,6 +60,8 @@ public class PoolManager : MonoBehaviour
 public class PoolData
 {
     public string ID;
+
+    public GameObject Parent;
     
     // the pool
     public List<GameObject> InactiveObjects = new List<GameObject>();

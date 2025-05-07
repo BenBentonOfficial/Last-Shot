@@ -38,7 +38,7 @@ public class Pickup : MonoBehaviour
             switch (dropType)
             {
                 case DropType.experience:
-                    LevelManager.GainExperience(dropValue);
+                    ExperienceManager.GainExperience(dropValue);
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();

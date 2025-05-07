@@ -8,6 +8,7 @@ public class Projectile : MonoBehaviour
 
     private float _damage;
     private DamageType _damageType;
+    
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
