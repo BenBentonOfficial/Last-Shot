@@ -1,6 +1,10 @@
+using System;
 using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public enum DamageType
 {
@@ -34,6 +38,8 @@ public class Weapon : MonoBehaviour
     public float reloadTime;
     public float reloadLength;
 
+    public int peirce;
+
     #endregion
 
     [SerializeField] private GameObject ReloadUI;
@@ -43,6 +49,8 @@ public class Weapon : MonoBehaviour
     
     [SerializeField] private DamageType _damageType;
     [SerializeField] private GameObject gunFlash;
+
+    private List<Type> bulletUpgrades = new();
 
     private void Awake()
     {
@@ -95,6 +103,14 @@ public class Weapon : MonoBehaviour
         Debug.Log("Ready to fire");
     }
 
+    private void Update()
+    {
+        if (UnityEngine.Input.GetKeyDown(KeyCode.O))
+        {
+            UnlockBehavior<BulletSplit>();
+        }
+    }
+
     private IEnumerator TriggerPulled()
     {
         yield return new WaitUntil(() => _cooldown.Ready && currentAmmo > 0);
@@ -138,8 +154,13 @@ public class Weapon : MonoBehaviour
     {
         var dir = CalcSpread();
         var obj = PoolManager.SpawnObject(weaponData.projectile, muzzle.position, dir).GetComponent<Projectile>();
+        foreach (var upgrade in bulletUpgrades)
+        {
+           if( obj.gameObject.GetComponent(upgrade) == null)
+               obj.gameObject.AddComponent(upgrade);
+        }
         var newDir = dir * Vector3.right;
-        obj.Initialize(newDir, projectileSpeed, CalcDamage(), _damageType);
+        obj.Initialize(newDir, projectileSpeed, CalcDamage(), peirce, _damageType);
         
         // FLASH
         // var flash = PoolManager.SpawnObject(gunFlash, muzzle.position, dir).GetComponent<GunFlash>();
@@ -182,6 +203,12 @@ public class Weapon : MonoBehaviour
     }
     
     #endregion
+
+    public void UnlockBehavior<T>() where T : BulletBehaviour
+    {
+        if(!bulletUpgrades.Contains(typeof(T)))
+            bulletUpgrades.Add(typeof(T));
+    }
 
     private float CalcDamage()
     {

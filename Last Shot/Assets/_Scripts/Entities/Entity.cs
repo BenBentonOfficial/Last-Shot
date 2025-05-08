@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Entity : MonoBehaviour, IDamageable
@@ -33,6 +34,11 @@ public class Entity : MonoBehaviour, IDamageable
         _rb = GetComponent<Rigidbody2D>();
         _anim = GetComponentInChildren<Animator>();
         
+        Health = maxHealth;
+    }
+
+    private void OnEnable()
+    {
         Health = maxHealth;
     }
 

@@ -27,12 +27,14 @@ public class Monster : Entity
         if (Health <= 0)
         {
             Health = 0;
+            Death();
         }
     }
 
     public void Death()
     {
         PoolManager.SpawnObject(experienceDrop, transform.position, Quaternion.identity);
+        WaveManager.Unregister(transform);
         PoolManager.ReturnObjectToPool(gameObject);
     }
 

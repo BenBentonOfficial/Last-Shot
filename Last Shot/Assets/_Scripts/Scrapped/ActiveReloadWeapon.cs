@@ -172,7 +172,7 @@ public class ActiveReloadWeapon : MonoBehaviour
             var direction = Quaternion.Euler(0, 0, angle) * transform.right;
             float angleToFace = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; 
             var obj = PoolManager.SpawnObject(_weaponData.projectile, muzzle.position, Quaternion.Euler(0,0,angleToFace)).GetComponent<Projectile>();
-            obj.Initialize(direction, projectileSpeed, 1, DamageType.Dark);
+            obj.Initialize(direction, projectileSpeed, 1,1, DamageType.Dark);
         }
     }
 
@@ -180,7 +180,7 @@ public class ActiveReloadWeapon : MonoBehaviour
     {
  
         var obj = PoolManager.SpawnObject(_weaponData.projectile, muzzle.position, muzzle.rotation).GetComponent<Projectile>();
-        obj.Initialize(muzzle.transform.right, projectileSpeed, 1, DamageType.Dark);
+        obj.Initialize(muzzle.transform.right, projectileSpeed,1, 1, DamageType.Dark);
     }
 
     private void StopShoot()

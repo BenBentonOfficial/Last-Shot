@@ -6,16 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="3d7cae4b-a72f-492b-99e1-92c507716944" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Last Shot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Last Shot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/Enemies/Monster 1/TinyMonster_Death.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animations/Enemies/Monster 1/TinyMonster_Death.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Monsters/TinyMonster/Tiny Monster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Monsters/TinyMonster/Tiny Monster.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestLevel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Core/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Core/ExperienceManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Core/LevelManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Core/ExperienceManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Misc/Pickup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Misc/Pickup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Misc/PoolManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Misc/PoolManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Entities/Enemies/Monster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Entities/Enemies/Monster.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Entities/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Entities/Entity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Scrapped/ActiveReloadWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Scrapped/ActiveReloadWeapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/StateMachine/StateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/StateMachine/StateMachine.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Waves/WaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Waves/WaveManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Weapons/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Weapons/Projectile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Weapons/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Weapons/Weapon.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,6 +145,7 @@
       <workItem from="1744722703773" duration="663000" />
       <workItem from="1744727325347" duration="1400000" />
       <workItem from="1745944882603" duration="5490000" />
+      <workItem from="1746713418511" duration="5207000" />
     </task>
     <servers />
   </component>

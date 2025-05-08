@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -9,6 +10,8 @@ public class WaveManager : MonoBehaviour
     private CircleCollider2D spawnCircle;
 
     public GameObject enemy;
+    
+    public static List<Transform> ActiveEnemies = new List<Transform>();
 
     private void Start()
     {
@@ -17,17 +20,24 @@ public class WaveManager : MonoBehaviour
         StartCoroutine(SpawnWave());
     }
 
-    public void StartWave()
+    public static void Register(Transform enemy)
     {
-        
+        if(!ActiveEnemies.Contains(enemy))
+            ActiveEnemies.Add(enemy);
+    }
+
+    public static void Unregister(Transform enemy)
+    {
+        ActiveEnemies.Remove(enemy);
     }
 
     IEnumerator SpawnWave()
     {
         while (true)
         {
-            PoolManager.SpawnObject(enemy, GetSpawnPosition(), Quaternion.identity);
-            yield return new WaitForSeconds(0.2f);
+            var spawned = PoolManager.SpawnObject(enemy, GetSpawnPosition(), Quaternion.identity).transform;
+            Register(spawned);
+            yield return new WaitForSeconds(0.8f);
         }
         
     }
