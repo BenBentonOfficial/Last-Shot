@@ -15,8 +15,6 @@ public abstract class Item : ScriptableObject
     
     public abstract void Unequip(Player player);
     
-    
-
     public abstract float Value(); 
 
 }

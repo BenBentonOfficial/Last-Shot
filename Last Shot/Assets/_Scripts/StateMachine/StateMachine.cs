@@ -28,11 +28,6 @@ public abstract class StateMachine<EState> : MonoBehaviour where EState : Enum
         CurrentState.EnterState();
     }
 
-    private void OnEnable()
-    {
-        CurrentState.EnterState();
-    }
-
     private void Update()
     {
         NextStateKey = CurrentState.GetNextState();

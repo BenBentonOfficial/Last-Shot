@@ -6,4 +6,9 @@ public class BulletBurn : BulletBehaviour
     {
         throw new System.NotImplementedException();
     }
+
+    public override void SetLevel(int lvl)
+    {
+        throw new System.NotImplementedException();
+    }
 }

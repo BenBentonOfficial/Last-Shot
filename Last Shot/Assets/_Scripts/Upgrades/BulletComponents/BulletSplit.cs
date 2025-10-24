@@ -7,7 +7,7 @@ public class BulletSplit : BulletBehaviour
 {
     public override void OnHit(GameObject target, Vector2 hitPoint)
     {
-        var nearestEnemies = FindNearestEnemyDirections(hitPoint, target.transform, 3);
+        var nearestEnemies = FindNearestEnemyDirections(hitPoint, target.transform, Level);
 
         foreach (var targetDirection in nearestEnemies)
         {
@@ -17,6 +17,11 @@ public class BulletSplit : BulletBehaviour
             Destroy(obj.GetComponent<BulletSplit>());
         }
         
+    }
+
+    public override void SetLevel(int lvl)
+    {
+        Level = lvl;
     }
 
     public Quaternion Rotation(Vector2 direction)

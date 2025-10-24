@@ -50,7 +50,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] private DamageType _damageType;
     [SerializeField] private GameObject gunFlash;
 
-    private List<Type> bulletUpgrades = new();
+    private Dictionary<Type, int> bulletUpgrades = new();
 
     private void Awake()
     {
@@ -156,8 +156,15 @@ public class Weapon : MonoBehaviour
         var obj = PoolManager.SpawnObject(weaponData.projectile, muzzle.position, dir).GetComponent<Projectile>();
         foreach (var upgrade in bulletUpgrades)
         {
-           if( obj.gameObject.GetComponent(upgrade) == null)
-               obj.gameObject.AddComponent(upgrade);
+            var upgradeType = upgrade.Key;
+            var level = upgrade.Value;
+
+            if (obj.gameObject.GetComponent(upgradeType) == null)
+            {
+                var newBehavior = (BulletBehaviour)obj.gameObject.AddComponent(upgradeType);
+                newBehavior.SetLevel(level);
+            }
+               
         }
         var newDir = dir * Vector3.right;
         obj.Initialize(newDir, projectileSpeed, CalcDamage(), peirce, _damageType);
@@ -206,8 +213,23 @@ public class Weapon : MonoBehaviour
 
     public void UnlockBehavior<T>() where T : BulletBehaviour
     {
-        if(!bulletUpgrades.Contains(typeof(T)))
-            bulletUpgrades.Add(typeof(T));
+        if(!bulletUpgrades.ContainsKey(typeof(T)))
+            bulletUpgrades.Add(typeof(T), 1);
+    }
+
+    public void UpgradeBehavior<T>(int amount = 1) where T : BulletBehaviour
+    {
+        var type = typeof(T);
+
+        if (!bulletUpgrades.ContainsKey(type))
+        {
+            Debug.LogWarning(type.Name + " not unlocked yet!");
+            return;
+        }
+        
+        bulletUpgrades[type] += amount;
+        Debug.Log(type.Name + " has been upgraded to level: " + bulletUpgrades[type]);
+        
     }
 
     private float CalcDamage()

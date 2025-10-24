@@ -447,7 +447,20 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Weiholmir_specialcharacters_sheet_0: 8238850106861535591
+      Weiholmir_specialcharacters_sheet_1: -1147599870020336309
+      Weiholmir_specialcharacters_sheet_10: 5555206972575713871
+      Weiholmir_specialcharacters_sheet_11: 6489510684637535781
+      Weiholmir_specialcharacters_sheet_12: 2604147450789043547
+      Weiholmir_specialcharacters_sheet_2: -9056074995300944106
+      Weiholmir_specialcharacters_sheet_3: 8547101572937334697
+      Weiholmir_specialcharacters_sheet_4: 6278413160220348000
+      Weiholmir_specialcharacters_sheet_5: -5258437267834139515
+      Weiholmir_specialcharacters_sheet_6: 3401892825770980135
+      Weiholmir_specialcharacters_sheet_7: -4351440967205163681
+      Weiholmir_specialcharacters_sheet_8: -2655531965114671024
+      Weiholmir_specialcharacters_sheet_9: -3062076182816718517
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

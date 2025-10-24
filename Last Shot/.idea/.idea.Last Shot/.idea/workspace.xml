@@ -5,18 +5,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d7cae4b-a72f-492b-99e1-92c507716944" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Last Shot/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Last Shot/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Last Shot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Last Shot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Monsters/TinyMonster/Tiny Monster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Monsters/TinyMonster/Tiny Monster.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Blood ForestDesert/Blood Desert Tileset.aseprite.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Blood ForestDesert/Blood Desert Tileset.aseprite.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Blood ForestDesert/Tree.aseprite.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Blood ForestDesert/Tree.aseprite.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Blood ForestDesert/desert.aseprite.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Blood ForestDesert/desert.aseprite.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Top Down monster pack 1/Monster 2/50x31 Monster 2 spritesheet with shadows.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Top Down monster pack 1/Monster 2/50x31 Monster 2 spritesheet with shadows.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Top Down monster pack 1/Monster 2/50x31 Monster 2 spritesheet without shadows.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Top Down monster pack 1/Monster 2/50x31 Monster 2 spritesheet without shadows.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Top Down monster pack 1/Monster 2/Monster 2.aseprite.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Top Down monster pack 1/Monster 2/Monster 2.aseprite.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Top Down monster pack 1/Monster 3/Attack up 9x31 with shadows.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Top Down monster pack 1/Monster 3/Attack up 9x31 with shadows.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Top Down monster pack 1/Monster 3/Attack up 9x31 without shadows.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Top Down monster pack 1/Monster 3/Attack up 9x31 without shadows.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Top Down monster pack 1/Monster 3/Attack up.aseprite.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Top Down monster pack 1/Monster 3/Attack up.aseprite.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Top Down monster pack 1/Monster 3/Monster 3 spritesheet 45x22 no shadows.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Top Down monster pack 1/Monster 3/Monster 3 spritesheet 45x22 no shadows.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Top Down monster pack 1/Monster 3/Monster 3 spritesheet 45x22 with shadows.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Top Down monster pack 1/Monster 3/Monster 3 spritesheet 45x22 with shadows.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Top Down monster pack 1/Monster 3/Monster 3.aseprite.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Top Down monster pack 1/Monster 3/Monster 3.aseprite.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Top Down monster pack 1/Monster 3/attack down 10x30 with shadows.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Top Down monster pack 1/Monster 3/attack down 10x30 with shadows.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Top Down monster pack 1/Monster 3/attack down 10x30 without shadows.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Top Down monster pack 1/Monster 3/attack down 10x30 without shadows.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Top Down monster pack 1/Monster 3/attack down.aseprite.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Top Down monster pack 1/Monster 3/attack down.aseprite.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Top Down monster pack 1/Monster 3/attack left right 11x28 with shadows.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Top Down monster pack 1/Monster 3/attack left right 11x28 with shadows.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Top Down monster pack 1/Monster 3/attack left right 28x11 without shadows.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Top Down monster pack 1/Monster 3/attack left right 28x11 without shadows.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Top Down monster pack 1/Monster 3/attack left right.aseprite.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Top Down monster pack 1/Monster 3/attack left right.aseprite.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Misc/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Misc/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Misc/chool/Weiholmir Standard/Weiholmir_GameMaker_sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Misc/chool/Weiholmir Standard/Weiholmir_GameMaker_sheet.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Misc/chool/Weiholmir Standard/Weiholmir_full_sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Misc/chool/Weiholmir Standard/Weiholmir_full_sheet.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Misc/chool/Weiholmir Standard/Weiholmir_lowercase_sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Misc/chool/Weiholmir Standard/Weiholmir_lowercase_sheet.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Misc/chool/Weiholmir Standard/Weiholmir_numbers_sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Misc/chool/Weiholmir Standard/Weiholmir_numbers_sheet.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Misc/chool/Weiholmir Standard/Weiholmir_specialcharacters_sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Misc/chool/Weiholmir Standard/Weiholmir_specialcharacters_sheet.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Misc/chool/Weiholmir Standard/Weiholmir_uppercase_sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Misc/chool/Weiholmir Standard/Weiholmir_uppercase_sheet.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Misc/chool/upheaval/upheavtt SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Misc/chool/upheaval/upheavtt SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Custom Attribute Processors.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Custom Drawers.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Sample - RPG Editor.unitypackage.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestLevel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Entities/Enemies/Monster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Entities/Enemies/Monster.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Entities/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Entities/Entity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Scrapped/ActiveReloadWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Scrapped/ActiveReloadWeapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Entities/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Entities/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/StateMachine/StateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/StateMachine/StateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Testing/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Testing/Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Upgrades/BulletComponents/BulletBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Upgrades/BulletComponents/BulletBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Upgrades/BulletComponents/BulletBurn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Upgrades/BulletComponents/BulletBurn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Upgrades/BulletComponents/BulletSplit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Upgrades/BulletComponents/BulletSplit.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Waves/WaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Waves/WaveManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Weapons/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Weapons/Projectile.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Weapons/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Weapons/Weapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Weapons/WeaponData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Weapons/WeaponData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +85,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;enemy-testing&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Upgrades&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -61,19 +96,27 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.0.29f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.2.6f2/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;$PROJECT_DIR$&quot; -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.0.29f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.2.6f2/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;$PROJECT_DIR$&quot; -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -87,6 +130,7 @@
       <option name="selectedOptions">
         <list />
       </option>
+      <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -100,6 +144,10 @@
       <option name="selectedOptions">
         <list />
       </option>
+      <option name="useMixedMode" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Device" type="UnityDevicePlayer" factoryName="UnityAttachToDevicePlayer">
       <method v="2" />
     </configuration>
   </component>
@@ -146,6 +194,16 @@
       <workItem from="1744727325347" duration="1400000" />
       <workItem from="1745944882603" duration="5490000" />
       <workItem from="1746713418511" duration="5207000" />
+      <workItem from="1759760878691" duration="847000" />
+      <workItem from="1759949627293" duration="1551000" />
+      <workItem from="1760039113225" duration="631000" />
+      <workItem from="1761071667097" duration="2373000" />
+      <workItem from="1761074789485" duration="1898000" />
+      <workItem from="1761076695896" duration="2238000" />
+      <workItem from="1761141201605" duration="583000" />
+      <workItem from="1761141788992" duration="146000" />
+      <workItem from="1761141937823" duration="62000" />
+      <workItem from="1761142002355" duration="2475000" />
     </task>
     <servers />
   </component>
@@ -173,5 +231,23 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

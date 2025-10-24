@@ -9,7 +9,9 @@ public class WaveManager : MonoBehaviour
 
     private CircleCollider2D spawnCircle;
 
+    public GameObject player;
     public GameObject enemy;
+    
     
     public static List<Transform> ActiveEnemies = new List<Transform>();
 
